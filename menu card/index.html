@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('pexels.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .welcome-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 50px;
+            
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .menu-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .menu-button:hover {
+            background-color: #c0392b;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Click the button below to view our menu.</p>
+        <button class="menu-button" onclick="redirectToMenu()">View Menu Card</button>
+    </div>
+
+    <script>
+        function redirectToMenu() {
+            window.location.href = 'menu.html';
+        }
+    </script>
+
+</body>
+</html>
